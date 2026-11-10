@@ -130,3 +130,4 @@ body[data-t=night] .cloud{opacity:.25}
 @keyframes fk{to{background:#ffe45c;height:14px;top:-16px}}
 @media(max-width:800px){.bgrid,.cinfo{grid-template-columns:1fr}.vtree,.tc{display:none}.lets{padding:22px 14px}.vil{padding:28px 12px 0}.turf{margin:0 -12px}}
 .vintro{text-align:center;font-size:9px;line-height:2;text-shadow:2px 2px #000;max-width:640px;margin:-4px auto 20px;padding:0 8px}.lp{color:#fff;font-size:9px;line-height:2;margin:12px auto 0;max-width:620px}
+@media(max-width:700px){.hc .row{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:100%;max-width:340px}.hc .row>:first-child{grid-column:1/-1}.hc .row .btn{padding:12px 6px;font-size:8px;text-align:center;line-height:1.6}}
