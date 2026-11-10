@@ -1,0 +1,7 @@
+{
+  "name": "syed-rahil-minecraft-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minecraft-themed static portfolio for Syed Rahil",
+  "scripts": { "start": "npx serve ." }
+}

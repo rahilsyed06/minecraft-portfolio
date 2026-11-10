@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Syed Rahil — Minecraft Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body data-t="day">
+<div id="hud"><div class="hearts" id="hr"></div><div class="xp"><i id="xpb"></i><b id="lv">LV 1</b></div><button class="btn" id="dn" style="padding:6px 8px;font-size:8px">DAY/NIGHT</button></div>
+
+<main>
+<!-- HOME -->
+<div class="page on" id="p-home">
+<div class="hero">
+ <div class="stars"></div><div class="sun"></div>
+ <div class="cloud" style="top:40px;animation-delay:-10s"></div><div class="cloud" style="top:110px;animation-delay:-35s;animation-duration:80s"></div>
+ <div class="mtn" style="left:-40px"></div><div class="mtn" style="right:-60px;height:130px"></div>
+ <div class="ground"></div>
+ <div class="tree" style="left:6%"></div><div class="tree" style="left:90%;height:56px"></div>
+ <div class="house" data-l="ABOUT" onclick="go('about')" style="left:18%"></div>
+ <div class="house" data-l="PROJECTS" onclick="go('projects')" style="right:16%;background:repeating-linear-gradient(#7d7d7d 0 14px,#666 14px 16px)"></div>
+ <div class="hc">
+ <p class="hi">HELLO, I'M</p>
+ <h1>SYED RAHIL</h1>
+ <p class="sub role">AI/ML ENGINEER &amp; PYTHON DEVELOPER</p>
+ <p class="sub intro">Final-year B.Tech CSE student with a passion for databases, software development, and game quality assurance. Always learning, always building.</p>
+ <div class="row">
+  <button class="btn" onclick="go('about')">▶ START EXPLORING</button>
+  <button class="btn" onclick="go('projects')">VIEW MY WORK</button>
+  <a class="btn" href="mailto:rahilsyed2006@gmail.com?subject=Resume%20Request">DOWNLOAD RESUME</a>
+ </div>
+
+ <div class="info"><span>☎ +91 90145 12006</span><span>✉ rahilsyed2006@gmail.com</span><span>⌖ Kadapa, Andhra Pradesh, India</span></div>
+ <div class="info"><span>SQL DATABASES</span><span>TEST GAMES</span><span>BUILD SOLUTIONS</span><span>"BETTER CODE, BRIGHTER FUTURE"</span></div>
+ </div>
+ <div class="stage"><svg class="steve" viewBox="0 0 16 32" preserveAspectRatio="xMidYMax meet" shape-rendering="crispEdges" role="img" aria-label="Minecraft Steve"><use href="#sv"/></svg></div>
+</div></div>
+
+<!-- ABOUT -->
+<div class="page" id="p-about">
+<h2 class="title">⛏ PLAYER PROFILE</h2>
+<div class="grid g2">
+ <div class="panel tl" style="grid-column:1/-1"><h2>Inventory — Syed Rahil</h2>
+  <div style="display:flex;gap:16px;align-items:flex-start">
+   <div style="background:#000;padding:10px;border:3px solid #555"><svg class="steve" viewBox="0 0 16 32" preserveAspectRatio="xMidYMax meet" shape-rendering="crispEdges" role="img" aria-label="Minecraft Steve" style="width:72px;height:144px"><use href="#sv"/></svg></div>
+   <div><p>I'm Syed Rahil, a final-year B.Tech Computer Science student with a strong command of SQL and hands-on experience in HTML, Python, and C. I'm passionate about databases, software development, and game testing. I enjoy learning new technologies, solving real-world problems, and working on projects that make an impact.</p></div></div>
+  <div class="q"><p>Name: Syed Rahil<br>Location: Kadapa, Andhra Pradesh<br>Degree: B.Tech (CSE)<br>Year: 4th Year (2023–Present)</p></div></div>
+ <div class="panel tl" style="grid-column:1/-1"><h2>Career Objective — Quest Log</h2>
+  <p>Final-year B.Tech Computer Science student with a strong command of SQL and hands-on exposure to HTML, Python, and C. Seeking to begin my career as an SQL Developer or Game Tester, bringing a detail-oriented, analytical mindset, a track record of competitive achievement, and a genuine interest in databases and interactive software quality.</p></div>
+</div></div>
+
+<!-- EDUCATION -->
+<div class="page" id="p-education">
+<h2 class="title">📚 THE LIBRARY — EDUCATION</h2>
+<div class="shelf"></div>
+<div class="grid g2">
+ <div class="panel tl" style="grid-column:1/-1"><h2>Education</h2>
+  <p><b>B.Tech in Computer Science Engineering</b><br>2023 – Present<br>Annamacharya Institute of Technology and Sciences, Kadapa<br>4th Year (Expected 2027)</p>
+  <p><b>EAMCET (Engineering Common Entrance Test)</b><br>State Rank: 30,123</p>
+  <div class="q"><p>"Focused on continuous learning and building a strong career in software development and databases."</p></div></div>
+ 
+</div></div>
+
+<!-- SKILLS -->
+<div class="page" id="p-skills">
+<h2 class="title">💎 SKILL INVENTORY</h2>
+<div class="inv" id="inv"></div>
+<div id="tip"><h4>Select an item</h4><p>Click a slot to inspect it.</p></div>
+<div class="grid g2" style="margin-top:16px">
+ <div class="panel"><h3>Areas of Interest</h3><p>▪ Database Management &amp; SQL Development<br>▪ Game Testing &amp; Quality Assurance<br>▪ Prompt Engineering &amp; Applied AI</p></div>
+ <div class="panel"><h3>Key Strengths</h3><p>▪ Fast learner, keen on new tools and technologies<br>▪ Strong problem-solving and logical reasoning<br>▪ Effective communicator, collaborative and team-oriented<br>▪ Analytical Thinking · Problem Solving · Quick Learning</p></div>
+</div></div>
+
+<!-- PROJECTS -->
+<div class="page" id="p-projects">
+<h2 class="title">📦 PROJECT CHESTS</h2>
+<p style="text-shadow:2px 2px #000;margin-bottom:20px;text-align:center">Click the chest to open it.</p>
+<div id="chests"></div></div>
+
+<!-- CERTS -->
+<div class="page" id="p-certificates"><h2 class="title">🏆 ADVANCEMENTS — CERTIFICATES</h2><div id="certs"></div><h2 class="title">⭐ ACHIEVEMENTS &amp; COMPETITIONS</h2><div id="achs"></div></div>
+
+
+
+<!-- CONTACT -->
+<div class="page" id="p-contact">
+<h2 class="title">🏘 VILLAGE NOTICE BOARDS — CONNECT WITH ME</h2>
+<p class="vintro">Welcome to my Minecraft village! Choose a notice board below to connect, explore my work, or get in touch.</p>
+<div class="vil">
+ <div class="stars"></div><div class="cloud" style="top:14px;animation-duration:90s"></div>
+ <i class="vtree" style="left:10px"></i><i class="vtree" style="right:10px"></i>
+ <div class="bgrid"><article class="board"><div class="plank"><span class="bi" data-ic="mail"></span><h3>EMAIL NOTICE BOARD</h3><p>For opportunities, collaborations, project discussions, or questions:</p><p class="v">rahilsyed2006@gmail.com</p><a class="btn bb" href="mailto:rahilsyed2006@gmail.com">SEND ME AN EMAIL</a></div><i class="post"></i></article><article class="board"><div class="plank"><span class="bi" data-ic="gh"></span><h3>GITHUB BUILD BOARD</h3><p class="v">github.com/rahilsyed06</p><p>Explore my repositories, coding projects, and development work.</p><a class="btn bb" href="https://github.com/rahilsyed06" target="_blank" rel="noopener noreferrer">VISIT MY GITHUB PROFILE</a></div><i class="post"></i></article><article class="board"><div class="plank"><span class="bi" data-ic="li"></span><h3>LINKEDIN COMMUNITY BOARD</h3><p class="v">linkedin.com/in/rahil-syed</p><p>Connect with me professionally and follow my learning and career journey.</p><a class="btn bb" href="https://www.linkedin.com/in/rahil-syed?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer">VISIT MY LINKEDIN PROFILE</a></div><i class="post"></i></article></div>
+ <div class="turf"></div>
+</div>
+<div class="lets"><i class="tc" style="left:18px"></i><i class="tc" style="right:18px"></i>
+ <h3>📬 SEND A MESSAGE</h3><p class="lp">Feel free to reach out for opportunities, collaborations, or a friendly conversation. I look forward to connecting with you!</p>
+ <div class="cinfo">
+  <div class="ci"><b>📍 PLAYER LOCATION</b>Kadapa, Andhra Pradesh, India</div>
+  <div class="ci"><b>☎ PHONE</b><a href="tel:+919014512006">+91 90145 12006</a></div>
+  <div class="ci"><b>✉ EMAIL</b><a href="mailto:rahilsyed2006@gmail.com">rahilsyed2006@gmail.com</a></div>
+ </div>
+</div></div>
+</main>
+
+<button class="btn" id="bt" aria-label="Back to top">▲</button>
+<div id="md"><div class="panel" id="mb"></div></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="sv"><g class="hd"><rect x="4" y="0" width="8" height="8" fill="#c58a63"/><rect x="4" y="0" width="8" height="2" fill="#4a2f1b"/><rect x="4" y="2" width="1" height="2" fill="#4a2f1b"/><rect x="11" y="2" width="1" height="2" fill="#4a2f1b"/><rect x="5" y="4" width="2" height="1" fill="#fff"/><rect x="9" y="4" width="2" height="1" fill="#fff"/><rect x="6" y="4" width="1" height="1" fill="#3a3aff"/><rect x="9" y="4" width="1" height="1" fill="#3a3aff"/><rect x="6" y="6" width="4" height="1" fill="#7a4a30"/></g><rect x="4" y="8" width="8" height="12" fill="#2aa7b8"/><rect x="0" y="8" width="4" height="4" fill="#2aa7b8"/><rect x="0" y="12" width="4" height="8" fill="#c58a63"/><rect x="12" y="8" width="4" height="4" fill="#2aa7b8"/><rect x="12" y="12" width="4" height="8" fill="#c58a63"/><rect x="4" y="20" width="4" height="10" fill="#3a3aa0"/><rect x="8" y="20" width="4" height="10" fill="#3f3fb5"/><rect x="4" y="30" width="4" height="2" fill="#666"/><rect x="8" y="30" width="4" height="2" fill="#777"/></g></defs></svg>
+<nav id="hb"></nav>
+<footer style="text-align:center;font-size:7px;text-shadow:2px 2px #000;margin-top:30px;padding:0 10px">&lt;/&gt; SYED RAHIL · Turning Ideas Into Reality · © 2026 Syed Rahil. All rights reserved.</footer>
+
+<script src="script.js"></script></body></html>
